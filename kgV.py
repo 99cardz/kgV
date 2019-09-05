@@ -10,8 +10,9 @@ def input_nenner(n):
     return nenner
 
 def calculate_kgV(list):
-    multibles_list = []
+    kgV_list = []
     for n in range(len(list)):
+        multibles_list = []
         number = list[n]
         print("number:", number)
         i = 0
@@ -26,7 +27,7 @@ def calculate_kgV(list):
                 i = 0
             else:
                 i=+1
+        if count([])
 
-
-    return multibles_list
+    return kgV_list
 print(calculate_kgV(input_nenner(int(input("wie viele nenner?")))))
