@@ -1,6 +1,26 @@
 #kleinstes gemeinsames Vielfaches
 
-prime_numbers = [2.0,3.0,5.0,7.0,11.0,13.0,17.0,19.0,23.0,29.0,31.0]#more than enough
+prime_list = []
+
+def generate_pries(max):
+    while num < max:
+    	nummern.append(num)
+    	for i in range(1, int(num)):
+    		div = float(i)
+    		if (num/div).is_integer():
+    			##print(num)
+    			prime_list.append(num)
+    	num += 1
+
+    for num in nummern:
+    	##print(num)
+    	if prime_list.count(num) > 1:
+    		##print(num)
+    		for x in range(prime_list.count(num)):
+    			prime_list.remove(num)
+    print(*prime_list)
+
+
 def input_nenner(n):
     nenner = []
     for i in range(n):
